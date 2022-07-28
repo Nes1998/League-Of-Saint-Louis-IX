@@ -1,9 +1,54 @@
-import React from 'react'
+import { Formik, Form, ErrorMessage } from 'formik'
+import TextInput from '../Components/Form/TextInput'
+import Header from '../Components/Header/Header'
 
-function Login() {
-  return (
-    <div>Login</div>
-  )
+const validate = (values) => {
+  const errors = {}
+
+  if (!values.name) {
+    errors.name = 'Requerido'
+  } else if (values.name.length < 5) {
+    errors.name = 'Nombre es muy corto'
+  }
+
+  if (!values.email) {
+    errors.lastname = 'Requerido'
+  } else if (values.lastname.length < 10) {
+    errors.lastname = 'Apellido es muy corto'
+  }
+
+  if (!values.phoneNumber) {
+    errors.radio = 'Requerido'
+  }
+
+  return errors
 }
 
-export default Login
+function Login() {
+
+  return (
+    <>
+      <Header />
+      <Formik initialValues={{ name: '', email: '', phoneNumber: '', address: '', occupation: '' }}
+        validate={validate}
+        onSubmit={values => console.log(values)}
+      >
+        <Form>
+          <TextInput name="name" label="Name" />
+          <br />
+          <TextInput name="email" label="Email" />
+          <br />
+          <TextInput name="phoneNumber" label="Phone Number" />
+          <br />
+          <TextInput name="address" label="Address (optional)" />
+          <br />
+          <TextInput name="occupation" label="Occupation (optional)" />
+          <br />
+        </Form>
+
+      </Formik>
+    </>
+  );
+}
+
+export default Login;
