@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../Components/Header/Header'
 
 function Welcome() {
   return (
-    <div>Welcome</div>
+    <>
+      <Header />
+      <div>Welcome</div>
+    </>
+
   )
 }
 

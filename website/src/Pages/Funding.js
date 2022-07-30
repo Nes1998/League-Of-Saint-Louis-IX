@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Components/Header/Header'
 
 function Funding() {
   return (
-    <div>Funding</div>
+    <>
+      <Header />
+      <div>Funding</div>
+    </>
   )
 }
 
