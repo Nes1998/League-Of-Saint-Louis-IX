@@ -33,6 +33,7 @@ function Login() {
       <Formik initialValues={{ name: '', email: '', phoneNumber: '', address: '', occupation: '' }}
         validate={validate}
         onSubmit={values => console.log(values)}
+        enableReinitialize={true}
       >
         <Form>
           <TextInput name="name" label="Name" />
@@ -47,6 +48,7 @@ function Login() {
           <br />
         </Form>
 
+        
       </Formik>
     </FormInput>
   );
