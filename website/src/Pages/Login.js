@@ -1,4 +1,5 @@
 import { Formik, Form, ErrorMessage } from 'formik'
+import tw, {styled} from 'twin.macro'
 import TextInput from '../Components/Form/TextInput'
 import Header from '../Components/Header/Header'
 
@@ -27,7 +28,7 @@ const validate = (values) => {
 function Login() {
 
   return (
-    <>
+    <FormInput>
       <Header />
       <Formik initialValues={{ name: '', email: '', phoneNumber: '', address: '', occupation: '' }}
         validate={validate}
@@ -47,8 +48,12 @@ function Login() {
         </Form>
 
       </Formik>
-    </>
+    </FormInput>
   );
 }
 
+
+const FormInput = styled.div`
+  ${tw`h-screen w-full bg-indigo-100 flex-col`}
+`
 export default Login;
