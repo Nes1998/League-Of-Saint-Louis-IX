@@ -1,3 +1,4 @@
+import tw, {styled} from 'twin.macro'
 import React from 'react'
 import Header from '../Components/Header/Header'
 
@@ -5,9 +6,12 @@ function Welcome() {
   return (
     <>
       <Header />
-      <div>
+      <Greeting>
         <h1> Welcome to the League of Saint Louis IX! </h1>
-      </div>
+        <Carousel id='carousel'>
+          <img src='signal-2022-05-15-150152.jpeg' alt='fencing1' height={200} width={400}/>
+        </Carousel>
+      </Greeting>
       <div>
         <section>
           The League of Saint Louis IX is a Catholic fencing club where the main focus is longsword fencing. The goal of the League as an organization is
@@ -47,5 +51,14 @@ function Welcome() {
 
   )
 }
+
+const Carousel = styled.div`
+  ${tw`w-full h-1/2`}
+`
+
+const Greeting = styled.div`
+  ${tw`w-full h-full bg-blue-200 text-lg font-bold`}
+  text-align: center;
+`
 
 export default Welcome
