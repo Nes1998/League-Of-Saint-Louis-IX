@@ -1,0 +1,20 @@
+{
+  "name": "league-webpage",
+  "version": "1.0.0",
+  "description": "A website for the fencing club known as League of Saint Louis IX",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "npm start --prefix website"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nes1998/League-Of-Saint-Louis-IX.git"
+  },
+  "author": "Nestor Fong, Andrew Cooksey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nes1998/League-Of-Saint-Louis-IX/issues"
+  },
+  "homepage": "https://github.com/Nes1998/League-Of-Saint-Louis-IX#readme"
+}
