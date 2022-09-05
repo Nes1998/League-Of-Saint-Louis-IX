@@ -7,19 +7,19 @@ const validate = (values) => {
   const errors = {}
 
   if (!values.name) {
-    errors.name = 'Requerido'
+    errors.name = 'Required'
   } else if (values.name.length < 5) {
-    errors.name = 'Nombre es muy corto'
+    errors.name = 'Name is too short'
   }
 
   if (!values.email) {
-    errors.lastname = 'Requerido'
+    errors.lastname = 'Required'
   } else if (values.lastname.length < 10) {
-    errors.lastname = 'Apellido es muy corto'
+    errors.lastname = 'Email is too short'
   }
 
   if (!values.phoneNumber) {
-    errors.radio = 'Requerido'
+    errors.radio = 'Required'
   }
 
   return errors
