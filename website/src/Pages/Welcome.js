@@ -60,15 +60,15 @@ function Welcome() {
           </div>
         </Carousel>
       </Greeting>
-      <div>
+      <DescriptionDiv>
         <section>
           The League of Saint Louis IX is a Catholic fencing club where the main focus is longsword fencing. The goal of the League as an organization is
           to foster a spirit of masculinity and chivalry within our members, which they will then infuse in their day to day lives and, most importantly, their Faith.
           The League is mainly looking for devout Catholic young men in their late teens to their 30s, but there are no strict rules, so if you are older and/or
           not of the Faith but very interested in chivalry and medieval fencing, give the League a try!
         </section>
-      </div>
-      <div>
+      </DescriptionDiv>
+      <ActivityDiv>
         <h1>Activities</h1>
         <p>
           As previously mentioned, the League is mainly focused on European, longsword fencing. However, in
@@ -79,8 +79,8 @@ function Welcome() {
           <li>Spear Throwing</li>
           <li>Gunplay</li>
         </ul>
-      </div>
-      <div>
+      </ActivityDiv>
+      <RulesDiv>
         <h1>Rules</h1>
         <p>
           As previously mentioned, the League is a Catholic fencing club, and though it is not expected
@@ -88,13 +88,13 @@ function Welcome() {
           Religion will have consequences up to and including losing your membership. In addition, while
           humor is far from being forbidden, the League does expect members to refrain from crass, vulgar or
           otherwise inappropriate humor during lessons. The League also expects each member to show respect to
-          the instructor and other members. Our code of chivalry can be summarized like this:
-
+          the instructor and other members. In summary, since the League is based around the principles of Medieval
+          chivalry, each member is expected to behave accordingly when they present themselves for lessons
           <div>
 
           </div>
         </p>
-      </div>
+      </RulesDiv>
     </WelcomeDiv>
 
   )
@@ -133,6 +133,22 @@ const WelcomeDiv = styled.div`
   h1 {
     ${tw`font-bold text-lg`}
   }
+`
+const DescriptionDiv = tw.div`
+  bg-yellow-200 text-lg
+`
+
+const ActivityDiv = styled.div`
+  ${tw`bg-green-200`}
+  ul {
+    ${tw`list-disc`}
+    li {
+      ${tw`py-5 px-5`}
+    }
+  }
+`
+const RulesDiv = tw.div`
+  bg-indigo-100
 `
 
 export default Welcome
