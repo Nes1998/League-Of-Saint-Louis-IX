@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Login />} />
         <Route path='/funding' element={<Funding />} />
         <Route path='/welcome' element={<Welcome />} />
-        <Route path='/mainHeader' element={<ExpandedHeader />} />
+        <Route path='/expanded-header' element={<ExpandedHeader />} />
         <Route path='/header' element={<Header />} />
       </Routes>
     </BrowserRouter>
