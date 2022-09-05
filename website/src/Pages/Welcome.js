@@ -127,7 +127,7 @@ const Carousel = styled.div`
 `
 
 const Greeting = styled.div`
-  ${tw`w-full h-full bg-blue-200 text-lg font-bold place-items-center`}
+  ${tw`w-full h-full bg-blue-200 text-lg font-bold place-items-center font-canterbury`}
   text-align: center;
 `
 

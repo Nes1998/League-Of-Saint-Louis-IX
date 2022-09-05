@@ -15,7 +15,7 @@ const TextInput = ({ label, ...props }) => {
 }
 
 const FormText = styled.div`
-    ${tw`font-canterbury text-lg`}
+    ${tw`text-lg`}
 
     label {
         ${tw`px-5 float-left`}

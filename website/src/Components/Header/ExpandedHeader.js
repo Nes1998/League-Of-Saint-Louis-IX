@@ -18,24 +18,37 @@ function ExpandedHeader() {
             <ListItem><Link to={'/welcome'}>Welcome Page</Link></ListItem>
             <ListItem><Link to={'/funding'}>Funding Page</Link></ListItem>
             <ListItem><Link to={'/'}>Sign in Page</Link></ListItem>
-            <ListItem><Link to={'/administratorSite'}>AdministratorPage</Link></ListItem>
+            <ListItem><Link to={'/administratorSite'}>Administrator Page</Link></ListItem>
         </AddressList>
     </ExpandedHeaderDiv>
   )
 }
 
 const ExpandedHeaderDiv = styled.div`
-    ${tw`bg-purple-200 w-full h-auto grid`}
+    ${tw`bg-purple-200 w-full h-screen grid animate-fadeIn font-canterbury`}
 
     #img-container {
-      height: 100%;
+      height: 200px;
       width: 500px;
       position: relative;
       bottom: 30%;
-      left: 33%;
+      left: 42%;
       img {
-        ${tw`h-full w-full`}
+        ${tw`h-full w-auto`}
       }
+    }
+
+    @media screen and (max-width: 800px) {
+      #img-container {
+        height: 200px;
+        width 500px;
+        position: relative;
+        bottom: 30%;
+        left: 22%;
+        img {
+          ${tw`h-full w-auto`}
+        }
+      }  
     }
 `
 
