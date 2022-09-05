@@ -14,7 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npm start"
+    "test": "npm run test",
+    "start": "npm start"
   },
   "author": "",
   "license": "ISC"
