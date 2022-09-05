@@ -18,7 +18,7 @@ function Header() {
 }
 
 const HeaderDiv = styled.div`
-    ${tw`bg-gray-100 w-full grid`}
+    ${tw`bg-gray-100 w-full grid animate-fadeIn`}
 
     height: 200px;
     #img-container {

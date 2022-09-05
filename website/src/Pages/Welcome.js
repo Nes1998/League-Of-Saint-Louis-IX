@@ -43,12 +43,24 @@ function Welcome() {
       <Greeting>
         <h1> Welcome to the League of Saint Louis IX! </h1>
         <Carousel id='carousel'>
-          <img src='signal-2022-05-15-150152.jpg' className='fencing' alt='fencing' height={300} width={400} />
-          <img src='signal-2022-05-15-150153.jpeg' className='fencing' alt='fencing' height={300} width={400} />
-          <img src='signal-2022-05-15-150152 (1).jpeg' className='fencing' alt='fencing' height={300} width={400} />
-          <img src='signal-2022-05-15-150152 (2).jpeg' className='fencing' alt='fencing' height={300} width={400} />
-          <img src='signal-2022-05-15-150152 (3).jpeg' className='fencing' alt='fencing' height={300} width={400} />
-          <img src='signal-2022-05-15-150152 (4).jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          <div>
+            <img src='signal-2022-05-15-150152.jpg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
+          <div>
+            <img src='signal-2022-05-15-150153.jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
+          <div>
+            <img src='signal-2022-05-15-150152 (1).jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
+          <div>
+            <img src='signal-2022-05-15-150152 (2).jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
+          <div>
+            <img src='signal-2022-05-15-150152 (3).jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
+          <div>
+            <img src='signal-2022-05-15-150152 (4).jpeg' className='fencing' alt='fencing' height={300} width={400} />
+          </div>
         </Carousel>
       </Greeting>
       <div>

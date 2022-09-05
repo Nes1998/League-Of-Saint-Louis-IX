@@ -8,6 +8,15 @@ module.exports = {
       fontFamily: {
         canterbury: ["Canterbury", "regular"],
         medieval: ["Medieval Sharp", "regular"]
+      },
+      animation: {
+        'fadeIn': "fade-in 1s ease-in"
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": {opacity: 0},
+          "100%": {opacity: 1}
+        }
       }
     },
   },
