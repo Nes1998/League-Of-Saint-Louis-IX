@@ -1,17 +1,14 @@
 import tw, { styled } from 'twin.macro'
 import React, { useEffect } from 'react'
 import Header from '../Components/Header/Header'
-import { ReactComponent as LeftArrow } from '../Assets/SVG/left-arrow.svg'
-import { ReactComponent as RightArrow } from '../Assets/SVG/right-arrow.svg'
 
 function Welcome() {
 
   useEffect(() => {
     var slideIndex = 1
-    var timer
 
     showImgs(1)
-    timer = setInterval(() => showNextImg(1), 4000)
+    setInterval(() => showNextImg(1), 5000)
 
     function showNextImg(n) {
       if (n < 0) {
@@ -38,7 +35,7 @@ function Welcome() {
   }, [])
 
   return (
-    <>
+    <WelcomeDiv>
       <Header />
       <Greeting>
         <h1> Welcome to the League of Saint Louis IX! </h1>
@@ -98,7 +95,7 @@ function Welcome() {
           </div>
         </p>
       </div>
-    </>
+    </WelcomeDiv>
 
   )
 }
@@ -129,6 +126,13 @@ const Carousel = styled.div`
 const Greeting = styled.div`
   ${tw`w-full h-full bg-blue-200 text-lg font-bold place-items-center font-canterbury`}
   text-align: center;
+`
+const WelcomeDiv = styled.div`
+  ${tw`font-canterbury`}
+  
+  h1 {
+    ${tw`font-bold text-lg`}
+  }
 `
 
 export default Welcome
