@@ -1,0 +1,23 @@
+{
+  "name": "league-of-saint-louis-ix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm --prefix backend install backend & npm --prefix website install website",
+    "dev:backend": "npm install --prefix backend start",
+    "dev:website": "npm install --prefix website start",
+    "start": "npm start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nes1998/League-Of-Saint-Louis-IX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nes1998/League-Of-Saint-Louis-IX/issues"
+  },
+  "homepage": "https://github.com/Nes1998/League-Of-Saint-Louis-IX#readme"
+}
