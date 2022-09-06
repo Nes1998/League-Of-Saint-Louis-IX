@@ -32,7 +32,7 @@ const ExpandedHeaderDiv = styled.div`
       width: 500px;
       position: relative;
       bottom: 30%;
-      left: 42%;
+      left: 45%;
       img {
         ${tw`h-full w-auto`}
       }
@@ -53,7 +53,7 @@ const ExpandedHeaderDiv = styled.div`
 `
 
 const AddressList = tw.ul`
-    w-full grid place-items-center
+    w-full grid flex flex-col place-items-center
 `
 
 const ListItem = tw.li`

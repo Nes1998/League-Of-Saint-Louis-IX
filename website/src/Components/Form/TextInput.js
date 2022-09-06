@@ -8,7 +8,7 @@ const TextInput = ({ label, ...props }) => {
         <FormText>
             <label className="label">{label}</label>
             <input {...field}/>
-            {meta.touched && meta.error ? <div>{meta.error}</div> : null}
+            {meta.touched && meta.error ? <div id='error'>{meta.error}</div> : null}
             <br />
         </FormText>
     );
@@ -24,7 +24,7 @@ const FormText = styled.div`
         ${tw`float-right`}
     }
 
-    div {
+    div#error {
         ${tw`text-red-500 font-bold`}
     }
 `
