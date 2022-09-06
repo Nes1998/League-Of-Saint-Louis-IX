@@ -19,6 +19,8 @@ module.exports = {
         },
       },
       color: {
+        "green-50": "#f0fd4",
+        "green-100": "#dcfece7",
         "sky-50": "#ecfeff",
         "sky-100": "#cffafe",
         "sky-200": "#bae6fd",
