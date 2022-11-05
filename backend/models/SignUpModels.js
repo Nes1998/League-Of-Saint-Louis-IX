@@ -1,11 +1,7 @@
 const mongoose = require('mongoose')
 
 const singUpTemplate = new mongoose.Schema({
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
+    name: {
         type: String,
         required: true
     },
@@ -13,8 +9,18 @@ const singUpTemplate = new mongoose.Schema({
         type: String,
         required: true
     },
-    password: {
+    phoneNumber: {
         type: String,
         required: true
+    },
+    address: {
+        type: String,
+        required: false
+    },
+    occupation: {
+        type: String,
+        required: false
     }
 })
+
+module.exports = mongoose.model('memberTable', singUpTemplate)
