@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Nes1998/League-Of-Saint-Louis-IX/issues"
   },
-  "homepage": "https://github.com/Nes1998/League-Of-Saint-Louis-IX#readme"
+  "homepage": "https://github.com/Nes1998/League-Of-Saint-Louis-IX#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
 }
