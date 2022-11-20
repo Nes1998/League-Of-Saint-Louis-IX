@@ -1,0 +1,10 @@
+POST http://localhost:4000/app/signup
+Content-Type: application/json
+
+{
+    "name": "Joseph",
+    "email": "joe@mail.com",
+    "phoneNumber": "(816)-786-6728",
+    "address": "ajgapoahawpgawh pahgie",
+    "occupation": "a;grkjkarahg"
+}
